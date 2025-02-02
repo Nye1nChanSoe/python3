@@ -1,0 +1,31 @@
+K-mean Clustering
+
+K-Means is an unsupervised machine learning algorithm
+Clustering data points into K-groups based on similarity
+
+
+# How it works
+
+1. Choose K
+    K = number of clusters
+    K = 3 divide the data into three clusters
+
+2. Init Centroids
+    Randomly select K points as initial cluster centers (centroids)
+
+3. Assign Points to Nearest Centroid
+    For each data point: compute the distance to each centroid
+    Assign the point to the cluster with nearest centroid
+
+4. Recalculate Centroids
+    Compute the new centroid for each cluster
+    By taking the mean of all points assigned to that cluster
+
+5. Repeat step 3 and 4 until convergence
+    Continue updating clusters until centroids stop changing
+    Or met a stopping criterion like max number of iterations met
+
+
+
+# Optimization
+    Elbow Method or Silhouette Score
